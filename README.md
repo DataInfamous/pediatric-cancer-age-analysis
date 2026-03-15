@@ -6,6 +6,9 @@ This project explores **age-related incidence patterns of pediatric cancer subty
 
 The analysis demonstrates exploratory data science techniques including data cleaning, distribution analysis, smoothing, and multiple forms of visualization to better understand developmental timing patterns in pediatric cancers.
 
+
+
+Development of a Jupyter Notebook analysis workflow
 ---
 
 ## Dataset
