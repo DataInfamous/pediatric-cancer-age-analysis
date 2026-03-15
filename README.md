@@ -98,55 +98,55 @@ These findings align with established pediatric oncology literature.
 
 ## Visualizations
 
-Visualizations
 
-The analysis generates several visualizations to explore how pediatric cancer incidence varies across developmental stages. These figures highlight how different cancers emerge across infancy, childhood, and adolescence.
+
+The notebook generates several visualizations to help explore how pediatric cancer incidence changes across childhood development. These figures highlight how different cancers tend to appear at different ages.
 
 Relative Age Distribution by Cancer Subtype
 
-This heatmap shows the percentage distribution of diagnoses across age groups for each cancer subtype. By normalizing counts within each cancer type, the visualization reveals developmental timing patterns independent of dataset size.
+This heatmap shows the percentage of diagnoses across age groups for each cancer subtype. This helps show when certain cancers most commonly occur during childhood.
 
-<p align="center"> <img src="figures/relative_age_heatmap.png" width="850"> </p>
+<p align="center"> <img src="figures/relative_age_heatmap.png" width="700"> </p>
 
-Key observations
+Some patterns that appear in the data:
 
-Neuroblastoma and retinoblastoma are strongly concentrated in infancy.
+Neuroblastoma and retinoblastoma occur most often in infants and very young children.
 
-Acute lymphoblastic leukemia (ALL) peaks during early childhood.
+Acute lymphoblastic leukemia (ALL) appears most frequently in early childhood.
 
-Osteosarcoma demonstrates a strong adolescent peak.
+Osteosarcoma tends to occur more often during adolescence.
 
-These patterns align with established pediatric oncology epidemiology.
+These patterns are consistent with known pediatric cancer trends.
 
 Absolute Incidence by Age Group
 
-This heatmap shows the raw counts of diagnoses for each cancer subtype across age groups.
+This heatmap shows the total number of diagnoses for each cancer subtype across age groups.
 
-<p align="center"> <img src="figures/incidence_heatmap.png" width="850"> </p>
+<p align="center"> <img src="figures/incidence_heatmap.png" width="700"> </p>
 
-While the relative heatmap highlights developmental proportions, this figure shows where the dataset contains the largest numbers of observations.
+This visualization helps show where the dataset contains the most observations and provides context for the relative distribution heatmap.
 
-Pediatric Cancer Incidence Landscape (3D)
+3D Pediatric Cancer Incidence Landscape
 
-This three-dimensional surface plot visualizes how cancer subtype incidence changes across age.
+This 3D visualization shows how cancer subtype incidence changes across age. Each ridge in the surface represents a different cancer subtype.
 
-<p align="center"> <img src="figures/3d Pediatric Cancer Incidence Landscape.png" width="850"> </p>
+<p align="center"> <img src="figures/3d Pediatric Cancer Incidence Landscape.png" width="700"> </p>
 
-The surface representation highlights the transition from cancers that predominantly occur in infancy to those that emerge later in childhood and adolescence.
+This plot provides another way to visualize how certain cancers cluster at different developmental stages.
 
-Visualization Methods
+Visualization Tools
 
-The figures were generated using Python with the following libraries:
+The visualizations were created using:
 
-pandas
+Python
+
+Pandas
 
 NumPy
 
 Matplotlib
 
 SciPy
-
-Gaussian smoothing was applied to age distributions to better visualize broader trends in pediatric cancer incidence.
 
 ## Tools and Libraries
 
