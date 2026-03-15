@@ -98,23 +98,55 @@ These findings align with established pediatric oncology literature.
 
 ## Visualizations
 
-### Ridge Plot
+Visualizations
 
-Shows smoothed age distributions for major pediatric cancer subtypes.
+The analysis generates several visualizations to explore how pediatric cancer incidence varies across developmental stages. These figures highlight how different cancers emerge across infancy, childhood, and adolescence.
 
-### Heatmap
+Relative Age Distribution by Cancer Subtype
 
-Displays absolute counts of cancer diagnoses across age groups.
+This heatmap shows the percentage distribution of diagnoses across age groups for each cancer subtype. By normalizing counts within each cancer type, the visualization reveals developmental timing patterns independent of dataset size.
 
-### Relative Risk Heatmap
+<p align="center"> <img src="figures/relative_age_heatmap.png" width="850"> </p>
 
-Highlights which cancers are disproportionately associated with certain developmental stages.
+Key observations
 
-### 3D Incidence Landscape
+Neuroblastoma and retinoblastoma are strongly concentrated in infancy.
 
-Provides a three-dimensional view of how cancer subtype incidence changes across age.
+Acute lymphoblastic leukemia (ALL) peaks during early childhood.
 
----
+Osteosarcoma demonstrates a strong adolescent peak.
+
+These patterns align with established pediatric oncology epidemiology.
+
+Absolute Incidence by Age Group
+
+This heatmap shows the raw counts of diagnoses for each cancer subtype across age groups.
+
+<p align="center"> <img src="figures/incidence_heatmap.png" width="850"> </p>
+
+While the relative heatmap highlights developmental proportions, this figure shows where the dataset contains the largest numbers of observations.
+
+Pediatric Cancer Incidence Landscape (3D)
+
+This three-dimensional surface plot visualizes how cancer subtype incidence changes across age.
+
+<p align="center"> <img src="figures/3d Pediatric Cancer Incidence Landscape.png" width="850"> </p>
+
+The surface representation highlights the transition from cancers that predominantly occur in infancy to those that emerge later in childhood and adolescence.
+
+Visualization Methods
+
+The figures were generated using Python with the following libraries:
+
+pandas
+
+NumPy
+
+Matplotlib
+
+SciPy
+
+Gaussian smoothing was applied to age distributions to better visualize broader trends in pediatric cancer incidence.
 
 ## Tools and Libraries
 
